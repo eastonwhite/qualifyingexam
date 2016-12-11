@@ -1,0 +1,110 @@
+---
+title: "theoretical ecology"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+This is a brief collection of notes on theoretical ecology from ECL232 taught by Alan.
+
+# Summary
+
+
+# Sections
+
+- Introduction
+- Stability
+- Time delays
+    - Nicholson (1957) and May (1975) time delays in Huffaker data
+- Age structure
+    - simple renewal equation which focuses on births
+        $$
+        B(t) = \int B(t-x) l(x) m(x) dx
+        $$
+    - here $B(t-x)$ is number of individuals born x years ago, $l(x)$ is survival of ind to age x, and $m(x)$ is reproduction at age x
+    - look for solution where $B(t)=B(0)exp(r t)$
+    - PDE approach would use method of characteristics (boundary condition turns out to be renewal equatioin)
+    
+- Two species competition (Lotka, Volterra, Gausa)
+    - Lotka has simple set of competitors
+    - **well-known idea that intra>inter species competition for coexistence**
+    - Gausa (1935) - yeast experiments with single and mixed species setups
+        - paramecian trials - one species outcompetes the other in mixed trial
+    - Forms of competition: resources, competition-colonization tradeoff, extinctino events, Cornell gradient of physcial controls hypothesis, R* theory
+    - Volterra extended Lotka by including density dependence
+- Two species predation
+    - can conduct experiments with refuges or immigration of prey
+- Host-parasitoid (Nicholson-Bailey)
+- Basic epidemiology
+    - Kermack and McKendrick - SIR models
+    - plague in Bombay in 1905
+    - need $N_0 > l/K$ for epidemic to occur
+    - definition of $R_0$
+    - do multi-strain dynamics lead to death of host? 
+    - Anderson and May
+- Spatial structure
+    - Theory of Island Biogeography (MacArthur and Wilson 1967)
+          - tried to explain the number of species found on islands, does not always scale with area
+          - argued that number of species on island depended on colonization and extinction rates on those islands, crossing of these curves is an equilbrium
+          - also predicts that islands farther from mainland should have lower equilrbium
+    - implicent (fraction of space occupied) vs explicent (explicit, simulation based approaches)
+    - metapopulations - Frituary butterflies, Huffaker's mites
+          - persistence globally, not locally
+    - Hastings (1977) - empty, prey only, prey and predator implicent model
+    - KPP (1937), Fisher (1937) - spread of genes, Skellum (1951) - muskrat in Europe
+- Diffusion equatin and spread (Andow et al. 1990)
+- Chaos and complex dynamics
+    - complex models have strong, overcommpensentory dynamics
+    - overcompensentory - when density is large, next year is less
+    - compensentory - saturing curve for N(t+1) vs N(t)
+    - cobwebbing
+    - chaos - expponetial divergence between nearby initial conditions
+    - bifurcation diagrams
+    - Lyapunov exponent - rate of expansion of ball arouund a solition (if positive then you have chaos)
+    - strange attractor - has dimension that is not an integer
+    - Constantino et al (1997) - chaotic dynamics in Tribolium using LPA model and experimental setup to manipulate parameter
+    - Beninca et al (2008) - long term plankton experiment where predictiniliy decreases over time
+- Regime shifts
+    - alternative state for deserts, lakes, and coral reefs
+    - critical slowing down occurs near bifurcation point (before transition)
+    - historical data and **prosecutor's fallacy**
+    - Takens Theorem - can reconstruct whole dynamics of system using single variable
+    - need lots of data, hard to detect transition
+    - Ludwig et al (1978)
+    - look at type I vs type II errors and receiver operator curves (true pos vs false pos)
+- Integro-difference approaches
+    - important when reaction-diffusion assumptions not met
+    - really fat tails creates moments that are infinite
+    - van Kirk and Lewis (1997) is a classic paper
+- **Stochasticity**
+    - do answers change when you add stochasticity?
+    - Melbourne and Hasting (2008) - stochastic Ricker model with environmental noise, demographic heterogeneity, demographic stochasticity, and random survival process, sex determination
+    - more complicated, stochastic models create earlier time to extinction
+    - my conjection - more complicated models will predict earlier timing of extinction
+- Marine reserves
+    - integro diff equations are one approach
+    - Botsford et al 2001, Hastins and Botsford 2006
+    - bioeconomic models
+    - future prospects: appropriate values of variability, multi-species, bioeconomic models
+- Invasive species
+    - many different mathematical approaches
+    - Spartina example
+    
+## Other important concepts
+
+- intermediate disturbance hypothesis
+- neutral and niche theory
+- r vs K selection
+- Bob Paine and food webs
+- definitions of stability
+- river flood pulse concept
+- SLOSS debate on reserves
+- Taylor's (power) law - variance to mean relationship of many systems

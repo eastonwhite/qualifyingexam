@@ -1,0 +1,76 @@
+---
+title: "important math ideas"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+Here is a compilation of important math concepts related to my qualifying exam. The material is mostly from Sebastian Schreiber's CORE class, his stochastics seminar, and Alan Hastings's math methods course. 
+
+## Sebastian CORE section
+
+- four parts to course: homogeneous systems, temporal heterogeneity, individual heterogeneity, spatial heterogeneity
+
+### homogeneous systems
+- population regulation - population is regulated if it is bounded (tendency for densities to decrease when large) and persistence (tendency to stay away from zero)
+- exponential growth and whooping crane example
+- negative density dependence
+- chaos theory and predictability
+- process versus observational error
+- model selection using maximum likelihood, AIC, BIC
+- Brook and Brandshaw (2006) - density dependence in 1200 species
+- Allee effects and sterile insect release model
+- superexponential growth and doomsday paper
+
+### temporal heterogeneity
+- simple geometric growth model
+- review of basic probability theory
+- law of large numbers - average value of a number of samples is a good approximation for the average value of the entire population (can also be used with single, long time series)
+- small variance approx: $E[log R(t)] \approx log E[R(t)] - \frac{1}{2} CV[R(t)]^2$
+- Stacey and Taper (1992) woodpecker example
+- Central limit theorem - means of a number of samples, regardless of distribution, will converge to normal distribution
+- PVA and problems of small populations (Allee effects, demographic stochasticity, inbreeding)
+- conservative (occurs at level of individual) versus diversified (occurs at population level) bethedging
+- Venable (2007)
+- correlated environments 
+      - temporal correlations do not affect long-term mean growth rate, but they do affect the variation in population growth
+      - on long time frames, positive autocorrelation increases variability in pop size
+      - conversly negative autocorrelations dampen variability
+      - on short time scales, positive population growth can have postive effect on persistence
+      - with overcompensatory dynamics included, the the effects of positive or negative autocorrelation can switch. Given overcompensentory dynamics, population size may be negatively correlated with itself. Two negatives can create positive effect that increases variability
+      
+### Individual heterogeneity
+
+- stage and age structure
+- simple matrix models, eigenvectors and eigenvalues
+- Perron-Frobenius Theorem: given conditions there exists dominant eigenvalue and corresponding eigenvector
+- loggerhead example
+- sensitivity and elasticity
+- burning grasses and environmental variablity
+- branching process models and demographic stochasticity
+
+### Spatial heterogeneity
+
+- simple discrete space matrix model with space
+- Chesson's equation 
+- Ideal-free distribution
+- Density-dependence, sources, and sinks
+- simple Levin's model
+- Hanski's incidence function model
+- Spatial and temporal heterogeneity - can have metapopulation persistence even if all patches have negative growth rates
+- evolutionary stable strategies and evolution of dispersal
+
+### Spatial heterogeneity
+
+
+## Stochastic seminar (Sebastian)
+
+

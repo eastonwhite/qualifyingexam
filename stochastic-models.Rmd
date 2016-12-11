@@ -1,0 +1,16 @@
+---
+title: "stochastic models"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+Here I summarize well-known results for stochastic modeling approaches in ecology and evolution. This is largely based on classnotes from Sebastian Schreiber, Lande et al. 2003 textbook, and the Encycolpedia of Theoretical Ecology. 

@@ -1,0 +1,184 @@
+---
+title: "MPA design"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+
+
+Here are notes on a number of key papers in marine reserve design and management. It was difficult to keep this list short as this field has exploded in the last two decades. Here * designates a paper specifically requested by a committee member.
+
+I still need to include papers suggested by Marissa and Loo
+
+# General MPA papers
+
+- *[@Wood2008]
+    - broad brushstroke paper examing global goals on marine protection
+    - argue that we are no where near targets and won't be for a long time
+    - a lot of protection is concentrated in only a few areas
+    - in 2016, 7% of EEZ protected, with an additonal 6% proposed
+- [@Lester2009]
+     - this is a meta analysis of the effects of marine protected areas
+     - they find that biomass, fish size, and species richness all increase inside no take areas
+- [@Gaines2010]
+     - make case and lay out recommendations for the design of marine reserves for both fisheries and conservation
+     - make point that replication helps avoid disasters
+- [@Babcock2010]
+     - this paper examined the few cases of long term MPA examples instead of using space for time substitions 
+     - they found that organisms that had previously been fished showed signs of recovery after implementing marine reserves, species not directly by fisheries took much longer to respond to marine reserves
+
+- [@Edgar2014]
+     - argue importance of at least 3 of 5 key features of MPAs: no take status, enforcement, old, large, and isolated
+- [@Hilborn2014]
+     - broad introduction to MPAs and use in fisheries management
+- *[@Baskett2015]
+     - examine population, community, and evoluttionary responses to marine reserves
+     - increases in body size and age, and biomass of previously fished species
+     - increased genetic diversity in marine reserves
+     - inconistent results for resistance to disturbace, but fish biomass was less variable in reserves
+- [@Fulton2015]
+     - paper reviews different types of MPA modeling work
+
+# Reserve size and spacing
+
+- [@Botsford2001]
+     - show that 35% of coastline need to be in reserves or reserve size has to be larger than mean larval dispersal distance of target species
+     - use 1d, simple integral projection model
+- 2003 special issue of ecoloigical applications
+     - [@Hastings2003a]
+          - results say that for consevation it is best to have one large reserve where as for fisheries it is best to have many small reserves (to export larvae out of reserves to fished areas)
+     - [@Gerber2003]
+          - review of different modeling approaches to studying MPAs
+          - argue reserves will be less effective for adult species
+          -terrestrial models focus on diversity, marine models are typically of single species
+          -need to determine timeline for measuring success after establishing a protected area
+- *[@Fernandes2005]
+     - paper mostly describes how the GBR non take reserve system was established. 20% of each bioregion is protected and 33% of GBR is protected ovaerall
+     -stress need for clear objectives and clear plan of action. Also need buy in and help from lots of different groups
+
+- [@Hastings2006]
+     - this paper looks at idealized metapopulation scenario (or an MPA network) and establishes that every patch could be a sink while the metapopulation still persits
+     - they point out that loops throughout connectivity diagram are important, not just fraction of individuals remaining in their natal site
+
+- [@White2010a]
+     - develop simple non spatial and spatial models that incorporate variability in larval survival. They look at how environmental parameters (e.g. PDO) can improve predictions in these models as larval variability correlates well with these types of enviromental factors
+      -point out that it is well know that environmental factors affect larval transport and survival
+      -on short time scales, variability drowns out signal making MPA evaluation difficult
+- [@White2010]
+      -argue that to account for MPA success or failure you must look at fishery management outside the MPA
+      -argue you must use profit, not yield, as a currency for evaluating fishery strategies
+      -argue that major factors of uncertainty are about connectivity b/w subpopulations and lack of info regarding conditions under which marine populations will become unsustainable (focus of this and past papers)
+      
+- [@Williams2013]
+     -unlike Hastings and Botsford, stochastic dispesal patterns does not require cycles in the pop connnectivity graph
+     - use very simple metapopulation model that allows for stochastic dispersal and autocorrelations in time
+     -discuss lots of previous work on enviornmental stochasticity in growth or reproducitive rates, but less work on dispersal patterns
+     -negative autocorrelation in dispersal allows persistence when there normally would not be persistence (in line with what Sebastian would say)
+
+- [@White2014a]
+      - want to bring together dynamic modeling and static optimization in planning marine reserves
+      - simulated population dynamics after Marxan identified reserve locations
+      - connecticity informatiaon improved performance of reserves for three of five species
+
+- [@Brown2015]
+     -static models do an okay job if fisheries are well managed and larval disperasal networks are simple, otherwise need dynamics models
+     -dynamic models better at looking spillover effects in long term
+     -cannot simply run models to equilbrium in stochastic setting
+
+# Connectivity papers
+
+- [@Williams2013] - see above
+- [@Snyder2014]
+
+# California specifically
+
+- California Master Plan document
+- [@Gleason2013]
+     - mostly discusses planning process of California MPA system
+- [@Botsford2014]
+     - presents history of California marine planning and current status
+     - explains what may happen b/c of reserves in future, but it is too early to tell
+  
+# Uncertainty in MPA planning
+
+- [@Mangel1993]
+     - develop model to compute extintion properties in populiation experiecning catastophes, compare results to MacArthur-WIlson which has no catastrophes
+
+- [@Allison1998]
+      - argue that marine setting is very different than terrestrial landscape
+      - in terrestrial setting, usually degrade from bottom up whereas we do the opposite in marine setting
+      -limitations: cannot do well against large events over wide spatial scales (pollution, dissease or exotic species)
+      -Predict that reserves will be effective when: short dispersal distances, spatially small threats 
+
+- [@Mangel2000]
+      - allows harvest to be stochastic (all this is is additional mortality on the stock caused by whatever)
+      - shows that reserve fraction has to increase with an increased coefficient of varaiatino of U(t) (once you get above some level of variability, you must use marine reserves)
+      
+- [@Allison2003]
+      - examines if marine reserves would be helpful in dealing with hurricanes or oil spills
+      -it depends if you look at average vs worst years for analyses
+      -discuss fact that extremes may change in the future
+      -need to deal with multiple, interacting factors
+      
+- [@Halpern2006]
+      - paper is really an attempt to introduce decision theory and probabilistic risk assessment into the study of ecological systesms
+      - under severe unceertainty it may not be possible to parameterize probability distributoins
+      - info gap theory - evaluate robustness of decisiosns when only best guesses for parameters are available and then choose the more robust answers instead
+      - with uncertainty, reserves should be closer together, not too surprising
+
+- [@Wagner2007]
+     - present metapop model of two patches with catastophes included
+     - they find that the rate to metapop extinction is largest for big catastophes when distance between reserves are close... not a big surprise
+
+- [@Game2008a]
+      - find that marine reserve location depends strongly on disturbancs risk and speed of recover for reefs in and outside of reserves 
+      - apply model to cycolone data on reefs in GBR
+
+- [@Mcgilliard2011]
+      - in face of uncetainty, past work has argued that marine reserves lower probability of extinction and decreases variability in catches
+      - past work has not include explicent spatial structure, density dependence in mortality, consideration of smaller spatial scales
+      - examine different types of catastophes in their model
+
+- [@Mumby2011]
+      - in Marxan cost function (which is usually just fishing losses cost) they included connectivity metric into cost function- seems a bit adhoc
+      - examined scenarios assuming corals would or would be able to keep up with warming - diff reserve networks emerged for either (did not seem to make a big different)
+      
+- [@Fabina2015]
+      - use dynamic population model of coral reefs and examine different frequencies and magnitudes (more important) of disturbance
+      - need to protect weak corals (high bleaching mortality) when bleaching is mild, but protect strong corals when bleaching is severe
+
+- [@Cabral2016]
+     - argue you need to account for uncertainty in tradeoffs between diferent objectives
+     - two case studies: mangroves and shrump aquacuture vs nursery habitat for fish 2) consevation of fish and uield in MPA
+     - optimal solution (MSY) becomes suboptimal when you account for uncertainties
+
+# Adaptive management and assessment
+
+- *[@White2013]
+- [@Moffitt2013]
+  
+# Reserves and disease dynamics
+
+- [@Lamb2016]
+     - found that corals in reserves had lower levels of disease following a tropical cyclone
+     - stresss that effect of marine reserves depends on if disease is density dependent or driven by environment
+- *[@Baskett2015]
+     - point out cases when disease prevelence is higher (density-dependen transmission present), lower (fishing facilates disease spread), or has no effect (disease susceptibility depends on environmetnal factors like temperature) in protected populations
+     - Tad suggested some optimal control work in spatial settings by famous people
+
+# Other case study
+
+Marine organisms can face high levels of variability that affect key vital rates. For example, it is well-documented the high level of variability and uncertainty in recruitment of marine fishes. In addition to variability in recruitment, organims with a larval stage are particurly sensitive to variable oceanographic conditions. Ocean currents play a large driver in where larval stages move and where they can settle. However, most work documents larval dispersal, and the resulting connectivity between areas, for an average year. In reality, this connectivity varies from year-to-year depending on oceanographic conditions and more infreqeunt activity like El Nino. 
+
+In California, there are X important oceanographic processes. The California current... Strong upwelling occurs in California and peaks in the summer. However, the strength of upwelling can vary from year-to-year. 
+
+In planning marine reserve locations... How will predicted MPA placement change if variability in recruitment or connectivity, or if catastophes (density-independent mortality) are included into models. 

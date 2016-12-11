@@ -1,0 +1,34 @@
+---
+title: "evolution modeling"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+For my second chapter, I have compiled a list of important papers and ideas regarding modeling evolution. Here a * means it was suggested by a committee member.
+
+# Important papers
+
+- more model description and purpose of haypiles
+- Adaptive Dynamics (in ETE)
+     -
+- know Marissa's evolutionary modeling work
+- re-read adaptive dynamics users' guide
+- *[@Day2005] attached
+- Levin & Muller-Landau 2000 attached for Fig. 1/general approach to the analysis (don't worry about the seed dispersal specifics)
+- ESS vs NIS, different types of evolutionary endpoints
+- Apaloo 1997 attached
+- Shaw and Cousin 2013, other seasonality evolution models
+
+
+
+
+

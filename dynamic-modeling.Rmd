@@ -1,0 +1,159 @@
+---
+title: "Dynamic modeling"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+In preparation for the Dynamic modeling section of my qualifying exam, Loo suggested I review notes from his course, his textbook, and other relevant papers.
+
+## Major points
+
+ - definitions of state and modeling philosophies
+ - need structure to build tactical models
+ - including different types of structure in models
+ - measuring replacement instead of local settlers
+ - cohort resonance
+ - MSY, stock-recruitment curves
+
+
+## Week I:  Philosophical approach to population modeling
+
+  - Important science questions: what allows persistence, causes population cycles, the role of random environment, patchy habitats and individual movement
+  - Practical questions: how do you prevent extinction? What is a safe pop level? What are the effects of harvesting or other mortality? Role of habitat structure and populations?
+  
+### Modeling approaches
+  - @Levins1966
+      - 3 characteristics: realism, generality, and precision
+      - argued you could have only 2 of 3 of these 
+  - Precision - closeness of measurements to one another
+  - Accuracy - how close measured value is to actual value
+  - Holling 1968 added the need for Holism
+  - May 1973 argued that most models were neither realistic, general, or precise
+      - models range from simple to complex
+  - Strategic models are usually simpler and may yield a number of very general results
+  - Tactical models are often more complex and are used to attack a specific problem, such as those in management. 
+  - models can be used for scientific, practical, or pedagogical purposes
+  - deductive (e.g. if a then b, try to reject hypotheses) vs inductive logic (if many observations of Z true, then Z is probably always true)
+
+### Other modeling concepts
+  
+  - state - the information needed to predict the dynamics of the system. In a population, a system could consist of current population size, birth and death rates, and age or size distributions. 
+  - i-state (information needed to predict individual state at next time) vs p-state (information needed to predict state of population at next time)
+  - IBMs important in situations where behavior, and possibility emergent properties, are important
+  - Uncertainty arises from process error, observational error, and structural error
+  - different scale of ecological organization 
+
+
+
+## Week II:  Simple population models 
+
+ - Fibonacci and the rabbit problem
+ - assume all individuals the same in simple models
+ - exponential growth in continuous time and Malthus
+ - geometric growth
+ - simple linear models useful when density is low
+ - logistic growth is simple non linear model
+     Ricker and Beverton-Holt versions in discrete time
+ - stability in ecology 
+ - cobwebbing and stability
+
+## Week III: Linear, age-structured models
+ - The continuity equation (von Foerster 1959): PDE of age and time - solve by method of characteristics with boundary condition the birth process
+ - The renewal equation (Lotka 1907)
+ - The Leslie matrix - discrete time and discrete age
+ - eigenvalues, sensitivity, and elasticity
+ - replacement - important as it tells you about population growth and decay
+ - convergence to stable age distribution and transient responses
+
+
+## Week IV: Size-structured models
+
+ - stand (distribution of all cohorts at one time) or cohort (single cohort over time) distributions
+ - shows example of how larval duration, survival, and distance depends on temperature
+ - Integral projection model (Easterling et al. 2000) - discrete time but continuous size structure
+ 
+
+## Week V:  Stage-structured models
+
+ - **Loo argues against stage-structured models as stage does not fulfill definition of state. You cannot predict where an indidivual will be in a stage structured model**
+ 
+
+## Week VI:  Age-structured models with density-dependent recruitment
+
+ - what causes cycles in Dungeness crab? Environmental forcing, predator-prey dynamics, or density-dependent recruitment?
+ - can get cycles from cannibalism (as seen in Tribolium)
+ - multiple equilbria for populations, look at how many fish populations never rebounded
+ - cycles of period T, where T is generation time happens because of cohort resonance
+ - cohort resonance - a population's sensitivity to generational- or low-frequency cycles in environmental variables
+
+
+## Week VII:  Linear age-structured models in a random environment
+ 
+ - three types of variability: environmental (random variability in reproduction or survival that affects all individuals similarly), demographic (different outcomes b/c of finiteness of individuals), and catastrophic (large single change in state)
+ - probability of extinction or quasi-extinction
+ - geometric growth rate
+ - role of correlated variability
+ - species at risk 
+    - estimate current risk of extinction
+     - formulate delisting criteria
+     - recovery planning
+ - Fieberg and Ellner (2000) - reliable predictions of extinction prob. are possible only over prediction period 10-20% of time series length
+ - Decision analysis - evaluation of all actions under various parameter values for various possible management actions
+
+
+Week VIII: Models of populations distributed over space
+
+ - could use 1d renewal equation for continuous space or matrix model for discrete space (need dispersal matrix)
+ - Levins simple population model $\frac{dp}{dt} = m p (1-p) - e p$
+ - @Hastings2006 - deterministic, n-patch model with movement between patches
+     - persistence depends on all sources that contribute to persistence, not simple sources and sinks
+     - all patches could have negative growth rates but dispersal allows metapopulation persistence
+     - **people often measure fraction of settlers who originated locally, this is not a good measure**
+     - **you need to measure replacement which depends on local dynamics and dispersal through loops**
+ - @Botsford 2001 - more realistic 1d coastline model with larval dispersal and scorched earth assumption
+     - looked at sustainability of stock which depends on reserve size and spacing between reserves
+     - want self persistence if one single large reserve or 35% of coastline in reserve networks
+     - movement of larval stage is highly variable and hard to measure
+ 
+
+Week IX:  Models in conservation biology
+9.1. Decision-making and model uses in population recovery
+9.2. Early models: birth-death, MacArthur and Wilson (1967), Goodman (1987) 
+9.3. Ludwig’s point: highly uncertain results
+9.4. Following papers by Ellner’s group
+9.5  Spatial aspects – Population Diversity
+
+## Week X: Models in fishery management
+
+ - about 20% of stocks over fished, only 3% of stocks in recovering category
+ - logistic fishery model was used early on to project biomass $\frac{dB}{dt} = k B (1- \frac{B}{B_\infty}) - Y$
+ - here $Y= q E B$, where $q$ is catch ability and $E$ is effort
+ - maximum sustainable yield, $\mbox{MSY} = B_\infty/2$
+ - many problems: 1 variable, few parameters, assuming CPUE is proportional to abundance, assuming population is at equilibrium
+ - in the 1990s the FAO went to more precautionary approach
+ - replacement is better measure to use when deciding how much to fish
+ - discusses reserves off of California
+     - need to look at transient responses
+     - fishing management outside of reserves in important
+ 
+## Other important general fisheries papers
+
+ - Beverton and Holt (1957)
+ - Branch et al. 2010 - response to ``fishing down food web paper"
+     - found that the mean tropic level of fish was not decreasing over time
+     - further they pointed out importance of certain stocks or certain spatial areas in altering this trend
+     - point our that mean trophic level does not correlate well with actual abundance
+ - Worm et al. 2009 - assessment of fisheries around the world
+     - examine large number of stocks using catch data and scientific surveys
+     - point to a number of potential paths forward and what has worked in a select few locations (e.g. Alaska)
+
+# References

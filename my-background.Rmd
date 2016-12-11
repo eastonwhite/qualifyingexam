@@ -1,0 +1,27 @@
+---
+title: "How I got here"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+This is a brief account as to how I reached the questions I am addressing in my PhD.
+
+# Summary
+
+In university I was interested in biology, in particular marine biology. My intro biology professor used mathematical models in his research. I performed well in his course and he agreed to mentor me on a research project. I mostly focused on modeling a particular well-studied metapopulation of the American pika. Most of the models I worked with included demographic stochasticity and yet the models consistenly predicted lower estimates of population variability compared to field data. These results moved me to start thinking more about the role of environmental variability. I became particurly interested in rare, large magnitude events as most the of ``missing variance" appeared to be driven by only a couple of years. I found the same result in simple age-structured, stochastic models of shark populations in the Bahamas. My journey in the "shark world" did not last terribly long. I often felt disappointed by the lack of good science and the role of pure advocacy in the field. 
+
+In the beginning of my PhD I was interested in marine systems, the role of large variability in ecological systems, and disease ecology. My PhD asks how do we deal with this large variability in models? Then, given this large variability, how will our management or conservation strategies be altered. I will focus on marine systems, in particular the planning of marine reserves. 
+
+# Future plans
+
+In the future, I would like to teach, mentor students, and conduct research at a university. I would want a lab with a combinatino of field, lab, and mathematical modeling projects. I would want to establish a long term census that students could participate in. I would address questions related to environmental stochasticty and the role of uncertainty in management and conservation issues. I think these questions are interesting in a both marine context and in the setting of disease dynamics under climate change influence. 
+

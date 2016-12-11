@@ -1,0 +1,57 @@
+---
+title: "natural history information"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+Here is some basic natural history information for the various organims and study systems related to my QE proposal
+
+# pikas
+
+There are 30 different recongnized species of pika in the (class Mammalia, order Lagomorpha, family Ochotonidae, and genus \emph{Ochotona}). Of these, two species live in North America, the American pika (\emph{O. princeps}) and the collared pika (\emph{O. collaris}). Although geographically isolated (\emph{O. collaris} lives in the Yukon and Alaska), the two species are remarkably similar. The two species are small (150-200 g), individually territorial, cold-adapted, and talus-dwelling obligates. Both species are capable of 1-2 litters per year (although only ever wean one) and have litters between 1-4 young in May/June. Generally, populations exist on spatially-segregated, metapopulations. Neither species hiberates and instead indidivuals collect hay (plant material) to store over winter. 
+
+Pikas have been proposed an indicator species of climate change effects. Pikas in several areas of the Great Basin have been extirpated in several sites. Acute heat stress, acute cold-stress, growing season precipitation, chronic heat stress may all contribute to these declines. However, both the American pika and the collared pika are currently listed as species of least concern by IUCN. 
+
+# sea stars in the Pacific Northwest (from http://www.seastarsofthepacificnorthwest.info/index.html)
+
+There are about 30 species of sea star (at less than depth of 30m) between California and southern Alaska. 
+
+Predators include other sea stars, some gulls, and some crab species. 
+
+## \emph{Pisaster ochraceus}
+
+This species has a range from Baja California to Alaska. It is probably the most reconizable and famous of sea stars in this area. They live in the intertidal or the open coast up to depths of 90m. They have a wide diet, but mussels are their primary prey. Severe declines of several populations were observed during warm water periods in 1978, 1982-84 (El Nino), and 1997-1998. Apparently the San Francisco oil spill had no observed effects of the species (Chan 1973).
+
+## \emph{Pycnopodia helianthoides} Sunflower sea star
+
+- one of the largest sea stars with up to 1m arms, 16-24 arms total
+
+# intertidal communities
+
+- many abiotic stress including water loss, temperature, salinity changes, wave action
+- competition for space and predation
+- vertical zonation
+- sea star removal experiment
+
+# coral reefs
+
+# Densovirus
+
+Densoviruses belong to the family Parvoviridae. Two sub-families of Parvoviridae refer to whether the virus affects vertebrates (Parvovirinae) or invertebrates (Densovirinae). Parvovirus particles, or virions, have a icosahedral shaped non-enveloped protein capside with a single linear single-stranded DNA genome. A major non-structural protein, NS1, controls the rolling hairpin replication mechanism, which is fairly unique amound DNA viruses.
+
+Densoviruses have been asssociated with... \citet{Hewson2014} discovered that a densovirus, was responsible for sea star wasting disease; they named the virus sea star associated densovirus (SSaDV). SSaDV has been identified on symptomatic sea stars, non-asteroid echinoderms (with no symptoms), in the water column, and in sediment.  
+
+# Other marine diseases
+
+For invertebrates, marine diseases have been identified for corals, sea grasses, sea urchins, shrimp, ...
+
+There are 

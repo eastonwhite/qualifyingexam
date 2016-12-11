@@ -1,0 +1,21 @@
+---
+title: "important-papers"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+## Marine protected area
+
+## Disease dynamics
+
+## Philosophy of modeling
+

@@ -1,0 +1,90 @@
+---
+title: "modeling-philosophy"
+author: "Easton R White"
+date: "1 Dec 2016"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+---
+
+# Scientific philosophy
+
+- Induction versus deduction
+- Ockham's razor
+- Francis Bacon (1500s)
+    - often called the father of empiricism
+    - focused on observations and making inductive arguments about nature
+    - argued scientists have to be skeptical to avoid fooling themselves
+- David Hume (1700s)
+    - also focused on empiricism
+    - argued we can never really observe causation, just results of causes
+- Thomas Kuhn (1960s)
+    - distinguished between normal and revolutoinary science
+    - normal science is process of observation and problem solving within a paradigm of science
+    - revolutionary science occurs when one paradigm takes over another paradigm
+    - we are not seeking to identify some ``truth"....the end goal is not known, instead scientific progress is more like evolution where new ideas either outcompete or die compared to current ideas
+    - idea of incommensurability - arises when there is not way to compare different competing theories
+- Karl Popper (1940s)
+    - Focused on question of how to tell science from non-science
+    - argued scienctific ideas were able to be falsified
+    - compared science that looked at past data to predict present (Freud) versus looking ahead, predicting future, and seeing how theory holds up (Einstein)
+    - argued we all have pre-conceived notions and beliefs
+    - confirmation of theory can only come from risky predictions
+
+# Basic and applied research
+
+Different views of the relationship between basic and applied research. Often there is a view of a spectrum from basic (or pure) to applied science. Conversly, the idea of Pasteur's quadrant is research which is both basic and applied research. This is sometimes called guided- or directed-basic research. 
+
+# Modeling philosophy
+
+## @Levins1966
+
+- argued that there is a trichonomy between realism, generalism, and precision
+- you can only achieve two of the three in developing models
+- does not view models as a hypothesis nor a theory - it cannot be directly verified by experiment
+- we don't care if a model is true, only that is generates good testable hypotheses
+
+## May 1973
+
+- argued that most models were neither realistic, general, or precise
+- instead models range from simple to complex
+
+## Aber 1997
+
+- begins by discussing disbelif and distrust of modeling by most people. Unfortuantly, few people would say they are a modeler and a field biologist
+- suggests several things that increase the use and effectiveness of models in ecology: model strucuture (fully display and explain it), parameterization, model validation (need a case study at least), sensitivity analysis (of parameters and comparing to null, or statistical models), prediction (only after previous steps have been made), make models freely accessible after paper is published2
+
+## Starfield 1997 - models in wildlife management
+
+- discusses various misconceptions about models
+- advocates that models be developed to answer particular questions (e.g. how often do you need to census?)
+- three steps for good decision making: 1) know what objective you are trying to achieve, 2) how well does a strategy perform to achieve objective, and 3) how do we then rank different strategies
+
+## May 2001- what use are general models
+
+- stresses that many populations are now seen as dynamical systems
+- diversity and stability debate
+      - diversity stabalizes community processes, but destabalies individual species dynamics
+- section in preface on environmental fluctuations - where they are placed in models and the type of noise
+
+## May 2004
+
+- discusses path in how science happens and how math enter each stage
+- worries that a lot of modelers now have little grounding in math
+- provides examples, like overly-complicated models in HIV, where math was used poorly
+- need to focus on key processes in models
+
+
+# My approach
+
+I view myself as a pragmatist when it comes to science. I view the act of building models and theory to be useful only if their conclusions are supported by experimental evidence. Further, I think it is important for experimental and field work to be placed into the larger body of theory. Most of my modeling work has been closer to what May would call tactical. Within @Levins66 framework, my work is usually realistic and precise. 
+
+In a quadrant with axes for seeking fundamental understanding and use-inspired reseaerch, I would like most of my work to fall in the quadrant of seeking both fundamental understanding and use-insipired research. I would like to be one of the few @Aber1997 discusses that would be both a theoretician and a field/lab biologist. 
+
+# References

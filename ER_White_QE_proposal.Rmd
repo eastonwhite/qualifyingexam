@@ -1,0 +1,504 @@
+---
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: true
+    citation_package: natbib
+fontsize: 11pt
+geometry: margin=0.75in
+bibliography: White_bib.bib
+header-includes: 
+    \usepackage{float} 
+    \usepackage{wrapfig}
+    \usepackage{hyperref} 
+    \usepackage{geometry} 
+    \usepackage{amsmath} 
+    \bibpunct[; ]{(}{)}{,}{a}{}{;} 
+    \usepackage{setspace}
+    \usepackage{lineno} 
+    \usepackage{color}
+    \usepackage{graphicx} 
+    \usepackage{wrapfig}
+---
+
+\begin{center}
+
+{\large \textbf{The role of environmental stochasticity in driving ecological and evolutionary dynamics}} \\
+
+\vspace{1cm}
+
+Easton R. White 
+
+Population Biology Graduate Group
+
+1-Dec-2016
+
+\vspace{1cm}
+
+\end{center}
+
+\section*{Committee}
+
+  - Chair: Sebastian Schreiber
+  - Population biology: Marissa Baskett
+  - Dynamic modeling: Louis Botsford
+  - Environmental stochasticity: Louie Yang
+  - Conservation biology: Ted Grosholz
+
+\section*{Outline}
+ 
+ - Background on environmental stochasticity and management
+ - Shortened version of seasonality review paper
+ - Shortened version of evolution of reproductive timing manuscript
+ - Main focus on my proposed chapters
+    + Marine protected area design with rare events
+    + Sea star wasting disease
+ - References 
+
+\begin{spacing}{2}
+\linenumbers
+
+\section*{Introduction} 
+
+Variability in environmental conditions is ubiquitous in nature. Writing on exponential growth in human populations, \citet{Malthus1798} recognized that other factors should slow this growth:
+\begin{center}
+ \framebox{%
+   \begin{minipage}{15cm}
+    "...of many interrupting causes, such as the introduction or failure of certain manufactures, a greater or less prevalent spirit of agricultural enterprise, years of plenty, or years of scarcity, wars and pestilence, poor laws..."
+   \end{minipage}
+  }
+\end{center}
+Malthus is hitting on key factors of environmental variability for human populations. Later, \citet{Hutchinson1961} examined the role of environmental variability in allowing many similar species to coexist when they would otherwise go extinct. Environmental variability is one of the structuring features of all ecological systems \citep{Boyce2006, Lawson2015}. Lande et al. (2003) argue that demographic and environmental stochasticity is far more important in determining population variability compared to internal cycles or chaos.
+
+Here I do not distinguish between natural and anthropogenic factors and consider both as environmental variability. This type of variability is typically thought of as an ``outside force" affecting the study system. Demographic stochasticity would be variability driven by internal dynamics, like births and deaths, especially in small populations \citep{Lande2003, Melbourne2008}. Conversely, environmental stochasticity would include other abiotic or biotic factors that may affect many individuals of that population similarly \citep{Lande2003}. For my purposes environmental factors may include temperature, precipitation, snowfall, other species, and infectious diseases. In addition, factors such as oil spills, nutrient runoffs, hurricanes are also important. Further, many forms of variability, like resource pulses, can create benefits for species and communities \citep{Yang2008}. Environmental variability can affect demographic parameters (i.e. vital rates) for particular species \citep{Lawson2015}. In turn this has consequences for whole communities and ecosystems, and how we manage these systems. In addition to ecological dynamics, species have evolved a myriad of strategies to handle environmental variability, like bet-hedging and long lifespans \citep{Childs2010}.
+
+
+Typically, people model environmental stochasticity by adding stochastic elements to deterministic model skeletons \citep{Lawson2015}. In contrast to deteministic models, stochasticity allows for population extinction. \citet{Lewontin1969} examined simple exponential growth models where $R(t)$ in $N(t+1) = R(t) N(t)$ was allowed to vary for each time step $t$. More specifically, values of $R(t)$ were drawn from a Gaussian distribution. They found that the geometric mean, as opposed to the arithmetic mean, of $R(t)$ determined extinction risk in the future. This is related to the general idea of Jensen's inequality, which explains why the mean of a function after certain transformations is different than transforming the mean of the function. In a series of papers, Tuljapurkar explored the role of environmental variability in population dynamics. He was specifically interested in structured populations where vital rates varied from one time step to the next. He extended \citet{Lewontin1969} to structured populations and found approximations to the stochastic growth rate when variability was small (Tuljapurkar 1990). \citet{Lawson2015} reviewed the importance of including environmental stochasticity in studies of ecology and the available mathematical tools. They stress that environmental stochasticity can cause increases or decreases in longterm growth rate. They also point out that not accounting for environmental stochasticity in population models can change, or even reverse, conclusions on species responses to environmental change \citep{Lawson2015}. There are many characteristics of environmental variability that determine their effect on ecological systems. Moving beyond simple Gaussian noise, other distributions or empirical data can be used. In addition, various characteristics of noise (e.g. tails of distribution, autocorrelation, magnitude, frequency) affect how vital rates and thus populations are affected \citep{Lande2003, SchreiberSJ2010}. 
+
+
+
+
+Concurrently with changes in mean values of many environmental factors, variability in those factors is also expected to change in many systems \citep{Vazquez2015}. For instance, climate change is expected to change variability in temperature and precipitation \citep{Vazquez2015}. \citet{McLaughlin2002} used a set of models and field data to demonstrate that increased variability in precipitation led to the extinction of two populations of a checkspot butterfly.  Further, climate change is expected to change the frequency and magnitude of tropical storms, flooding events, and heat waves \citep{Smith2011}. These types of rare events may happen infrequently, but they can have disproportionately large effects on ecosystems. For instance, in systems with alternative stable states, large perturbations can move a system from one state to another \citep{Scheffer2001}. In the context of evolutionary dynamics, large environmental variability also presents strong selective pressures for organisms. For example, droughts present the Galapagos finch with strong selection on beak size \citep{Boag1981}.
+
+In this proposal, I describe four separate projects threaded together by the influence of environmental stochasticity. I will briefly describe chapters 1 and 2 as both are largely finished and in preparation for submission. Chapter 1 is a review paper on the role of seasonality in ecology. I describe different approaches for modeling seasonality and how seasonality is a structuring component in many systems. In chapter 2, I describe a modeling project on the evolution of reproductive timing. I built a general model of phenology evolution and then applied it to study the evolution of reproductive timing in the collared pika \emph{Ochotona collaris}. Chapters 3 and 4 are distinctly different from the first two. In chapter 3, I describe a general model for how to design marine protected areas in the face of uncertainty, particularly rare events \citep{Halpern2006}. I discuss applications to coral reefs in the Caribbean. In chapter 4, I examine how environmental variability (particularly in temperature) affects disease dynamics in sea stars. I will use a simple set of mathematical models parameterized with field and lab data to understand future disease risks under climate change. 
+
+
+
+
+
+
+
+
+\section{Review paper on seasonality in ecological systems}
+
+\textbf{Easton R White, Alan Hastings}, in prep for \emph{Ecology Letters}
+
+\subsection{Introduction}
+
+Seasonality is a nearly ubiquitous feature of ecological systems since in essentially all environments climatic drivers are seasonal. Here, we define an environmental variable as seasonal if it experiences regular, roughly periodic changes on an annual basis. Seasonal variables relevant in ecological systems include rainfall, temperature, photoperiod, wind, human activity, upwelling, and resource pulses. Seasonal factors are difficult to study. From an empirical perspective, data must be collected throughout the year, over several years to understand the role of seasonality in ecological systems. Ignorance also stems from the lack of tools ecologists have mathematically to deal with seasonal factors. Mathematical models of populations or communities are much more difficult to solve with the addition of seasonal forcing terms. 
+
+In this review, we explore a number of different areas of ecology that seasonal factors have been found to be important, or where incorporating seasonal dynamics may enrich our current understanding. We introduce some of the theory available regarding seasonal dynamics and how it relates to single-species, community, and ecosystem dynamics. In addition, we discuss a number of key areas like disease dynamics or animal migrations where the inclusion of seasonal factors is essential. Lastly, we discuss implications of seasonality for management and conservation issues in a changing world. The current version here is an abridged version of a manuscript in preparation for submission to \emph{Ecology Letters} this year.
+
+
+\subsection{Theory for seasonality}
+
+Including seasonal components to standard population models can alter predictions of those models. For instance in a pair of differential equations, with seasonal forcing terms, periodicity and even chaos can appear; the forcing terms essentially act to increase the system dimension. 
+
+In standard population models, we have several techniques that are often employed to learn about their dynamics: equilibrium and stability analyses, phase plane diagrams, and finding solutions in simple cases in some cases. However, modeling seasonality presents additional challenges. A simple approach would be to include periodic forcing terms in models. Models of this form can sometimes be analyzed with Floquet theory \citep{Klausmeier2008}, but numerical methods may be needed. Depending on the specific role of seasonality and questions asked several other mathematical approaches may be relevant: nonautomous equations, successional state dynamics \citep{Klausmeier2010}, impulsive differential equations, hybrid models, or simulations.
+
+\subsection{Empirical examples of seasonality}
+
+In our manuscript in preparation, we detail sections for various examples of seasonal variability in natural systems. Here I present a single bullet point for each section.
+
+\begin{itemize}
+
+\item Disease dynamics: There are several well-known examples where seasonality has been identified as a key factor in understanding infectious diseases of both humans and animals. Seasonality can affect host behavior, modify host immune responses, alter encounter rates between pathogens and hosts, and affect the biology of disease vectors via changing season lengths and magnitude \citep{Altizer2006}. One textbook example in epidemiology is the outbreak of the contagious childhood disease measles in England (Grenfell et al. 2001). Models with the inclusion of seasonal factors accurately predict sustained, large amplitude cycles (Grenfell et al. 2001).
+	
+\item Animal migrations: Animal migrations both on land and in the sea have long fascinated ecologists. The timing of migration is ultimately a phenological phenomenon. Photoperiod is a reliable cue used by both migratory and resident individuals. However, temperature, precipitation, or rhythmic cycles may also be used \citep{Dingle2014}. Different species use different cues, or respond differently to changing cues. Perhaps not surprisingly, with global climate change, some migration cues are becoming unreliable or species are not responding to changes in climate. 
+
+\item Species interactions: Types of species interactions may include competition, predation, parasitism, mutualism, as well as many others. Early work focused on how two species can coexist given limited resources (Ayala et al. 1973). Seasonal factors can promote temporal niche partitioning. In addition to competition, a lot of work has examined predator-prey interactions in relation to seasonal forcing. \citet{Taylor2013a} examined a simple predator-prey model forced with seasonal terms and found multi-year cycles, quasi-periodicity, and chaos are all possible. Recently, \citet{McMeans2015} argued that temporally forced food webs are the norm in ecology and that including temporal variability in models has an effect on both ecosystem function and stability. 
+
+
+\item Seasonality and global change:  It has become clear that the phenology of many plant and animal species has advanced due to anthropomorphic climate change \citep{Visser2005}. Shifts in the timing of these events can be driven by changes in temperature, precipitation, or extreme weather events \citep{Smith2011}. Global climate change can alter the phenology of species in primarily three ways: mismatch in the timing of seasonal events, increased or decreased season lengths, and lastly, a reduction or increase in the seasonal variability. The specific mode in which climate change affects seasonality can have important effects for ecological dynamics. In response to climate change, a species can adapt (through phenotypic plasticity or genetic adaptation), move, or go extinct \citep{Reed2011}.
+
+\end{itemize}
+
+\subsection{Conclusion}
+Seasonality is a particular type of temporal variability and is ubiquitous in ecological systems. We presented several scenarios where an appreciation for seasonal forces is essential for ecological understanding, including species interactions, disease dynamics, and animal migrations. In response to climate change, there are numerous examples of changing phenologies of plant and animal species across the globe \citep{Forrest2010}. Empirically, an understanding of seasonal forcings requires long-term observations or experiments. Therefore, data from several years, including multiple seasons, are required to characterize such a system. Mathematically, we have few tools to handle large variability in even simple models. Of course, we have even fewer tools available in more complicated ecological systems \citep{McMeans2015}. In general, we believe seasonality, and its effects on ecological systems, are under-appreciated. Further, an understanding of seasonal forces will become increasingly important in the context of global change. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Opposing selective pressures on reproductive timing in the face of climate change}
+
+
+\textbf{Easton R White, Kalle Parvinen, and Ulf Dieckmann}, in prep. for \emph{Evolutionary Applications}
+
+\subsection{Introduction}
+
+For many species their seasonal timing of life history events, or phenology, is important for both ecological and evolutionary dynamics \citep{Forrest2010}. Phenology includes the timing of migration, feeding, hibernation, mating, and reproduction. For example, reproductive timing is often restricted to certain parts of the year and depends on factors like snowfall, food availability, and predation pressures \citep{Bronson2009}. Recent work has highlighted the importance of climate change in driving phenological shifts for a number of different species \citep{Forrest2010}. Of particular concern, are interacting species which may respond to different cues, or at least respond at different rates to the same cues \citep{Johansson2015a}. In addition to changing the mean timing of spring onset, climate change is expected to alter the variability in timing of spring onset \citep{Assessment2005}. This leads to the question of how phenological timing should evolve given a variable environment \citep{Iwasa1994}.
+
+
+Both environmental variability and climate change are expected to be particularly relevant at higher latitudes, where seasonal selective pressures are strong \citep{Stevenson2015}. In addition, to build sophisticated models and to predict the effects of climate change, high-quality data must be available. One case study that fulfills both of these criteria is the the collared pika (\emph{Ochotona collaris}) found in the Yukon, Canada. In recent years, concerns have developed about the effect of climate change on pikas (\citealp{COSEWIC2011}, but see \citealp{Smith2015}). The collared pika was recently listed as a species of concern by Canada, because of the potential effect of climate change on their populations in the near future \citep{COSEWIC2011}.
+
+We have three primary aims: 1) to build a general model of phenology evolution that accounts for eco-evolutionary dynamics and environmental factors, 2) to investigate the role of environmental variability in driving evolutionary dynamics, and lastly 3) to explore how changes in mean timing, in addition to the variability in timing, of spring affect evolutionary dynamics under projections of climate change. To account for realistic ecological dynamics and environmental factors, evolutionary game theory is appropriate. Our general modeling framework incorporates physiology, population dynamics, and environmental factors to examine the evolution of reproductive timing. As a case study, we apply our model to a population of collared pika found in Ruby Ridge, Yukon, Canada \citep{Franken2004b, COSEWIC2011}. Of particular interest for pikas at this site is the prediction that climate change will induce an earlier onset of spring and the onset of spring will be more variable on a year-to-year basis \citep{Assessment2005}.
+
+
+
+\subsection{Methods}
+
+We are interested in organisms that have a specific window of the year in which they can reproduce, the reproductive season. A reasonable framework for this type of system is a coupled set of differential equations and a discrete-time map, a hybrid model. More specifically, we model within-reproductive season dynamics as a continuous process (within-season dynamics) and map from one year to the next (between-season dynamics). Within-season dynamics are modeled with a set of ordinary differential equations that track population density for different life stages, their respective resource reserves, resource density, and the environment. 
+
+\subsubsection{Model}
+We explicitly model the snow depth ($E(t)$), adult density ($A(t)$), juvenile density ($J(t)$), adult haypile size ($B_A(t)$), juvenile haypile size ($B_J(t)$), and the plant biomass ($R(t)$). We assume a birth pulse reproductive strategy where all reproduction occurs at a single instance.
+
+\vspace{-0.2cm}
+\begin{equation}
+  \begin{array}{llcl}
+  \mbox{Snow depth:} & \frac{d}{dt}E(t) &= & e E(t) , \\
+  \mbox{Adult density:}   &\frac{d}{dt}A(t) &=& -u_A A(t) , \\
+  \mbox{Juvenile density:} & \frac{d}{dt}J(t)& =& -(u_J + u_E \frac{E(t)}{K+E(t)})J(t), \\
+  \mbox{Adult haypile size:}   & \frac{d}{dt}B_A(t) &=& w_A \frac{a_A R(t)}{1 + a_A h_A R(t)} - \beta_A B_A(t), \\
+  \mbox{Juvenile haypile size:}   &\frac{d}{dt}B_J(t,\tau) &=& w_J \frac{a_J R(t)}{1 + a_J h_J R(t)} - \beta_J B_J(t), \\
+  \mbox{Plant biomass:} & \frac{d}{dt}R(t) &=& r R(t)(1 - \frac{R(t)}{K_R}) - A(t) \frac{a_A R(t)}{1 + a_A h_A R(t)} - J(t) \frac{a_J R(t)}{1 + a_J h_J R(t)}
+  \end{array}
+  \label{within-season-eq}
+\end{equation}
+\vspace{-0.2cm}
+
+Here $E(t)$ decays at a rate $e$ through the course of the season. Both $A(t)$ and $J(t)$ decrease during the course of the season according to specific mortality rates. The juvenile summer mortality rate depends on $E(t)$ and three parameters: $u_J$ (mortality rate when no snow is present), $u_E$ the maximum mortality rate from snow, and $K$ (a half-saturation constant). We assume a Holling type II (or type I if $h=0$) functional response for resource acquisition which includes handling time $h$ and an attack rate $a$. The resources reserve also decays at a rate $\beta$. Lastly, the plant biomass is assumed to exhibit logistic growth.
+
+The birth of new juveniles $J(\tau) =  \alpha A(\tau)$ occur during the reproductive season with a new cohort of juvenile at time $\tau$ (a birth pulse with rate $\alpha$). As in many species, we do not know which cues pikas use to time reproduction. Therefore, we investigate two different reproductive strategies: 1) timing cue -- this is a cue based on the timing within year, like photoperiod and 2) environmental cue -- this cue depends on an environmental factor, like snow depth. For the environmental cue, the strategy value is the threshold of snow depth at which pikas will begin reproducing.
+    	
+The between season dynamics provide the initial conditions for the differential equations used for within season dynamics. The environment, snow depth, initial condition, $E(0)$, is given by a random variable. For pikas, we assume that juveniles mature and become adults after their first winter. Adult pika initial density is given by the number of surviving adults and juveniles from the previous year, which also depends on their respective haypile size. Because of data limitations, we assume adults and juveniles have the same parameter values; this assumption may be important, particurly in the case of phenology \citep{Yang2010a}.
+
+\subsubsection{Case study of the collared pika}
+
+We apply our model to a population of the collared pika (\emph{Ochotona collaris}) located in the Ruby Ridge Mountains, Yukon Territory ($61^\circ$ 12$'$ N, $138^\circ$ 16$'$ W; 1800-2000m). Since 1995, pikas have been live-trapped and given unique identifying tags \citep{Franken2004b}. More information on the specific data collection methods is given in \citet{Franken2004b}. Importantly, several studies have collected detailed life-history information needed to parameterize our model. Starting from a general model, we made several specific model specifications for the collared pika (see Manuscript for details).
+
+
+
+
+
+\subsection{Results}
+
+We evaluated two types of reproductive strategy types in our analyses. Here we focus on the cue based on the amount of snowfall as that is more interesting in stochastic settings, particularly with climate change. In the main manuscript, we present additional results. 
+
+\subsubsection{Selective pressures under climate change}
+
+In many areas, climate change is predicted to have two main effects on the timing of spring \citep{Assessment2005}. Climate change is expected to cause an earlier timing of the onset of spring (which refers to a lower $E(0)$ in our model). In addition, climate change is expected to cause a more variable timing of the onset of spring (an increase in $var(E(0))$). To test effects of these predictions, we explored different mean and variances of the environmental initial condition and determined the predicted evolutionary stable strategies (Fig. \ref{fig:ESS_vs_envion}). Here, selection for an lower tolerance to snow occurs for decreasing values of the environmental initial condition (Fig. \ref{fig:ESS_vs_envion}a). In addition, there is selection for a delayed timing of reproduction with increasing variability in the environmental initial condition (Fig. \ref{fig:ESS_vs_envion}c). 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.55\linewidth]{/Users/eastonwhite/Dropbox/IIASA2016-pika-project/Writing/figures/ESS_vs_E0_and_var_time}
+	\caption{Relationship between predicted evolutionary stable strategy and $E(0)$ or variability in $E(0)$: a) ESS for different values of $E(0)$ while holding var($E(0)$) constant, b) ESS for different values of var($E(0)$) while holding $E(0)$ constant, and c) Mean reproductive timing for different values of var($E(0)$) while holding $E(0)$ constant. The three vertical dashed lines indicate the historical values for the Yukon study site.}
+	\label{fig:ESS_vs_envion}
+\end{figure}
+
+
+
+\subsection{Discussion}
+
+We began by building general eco-evolutionary framework (not shown in the proposal) that incorporates stage structure, physiology, and environmental variables. The model is flexible enough to be applied to many different populations of plants or animals. As a case study, we applied our model to a population of the collared pika in the Yukon \citep{Franken2004a}. With a parameterized model of population dynamics we were able to examine the evolutionarily stable strategy for reproductive timing. We examined two different cues: a timing cue, based on timing within the year; and an environmental cue, where timing is based on the amount of snow present at any given time. For both cues, our model predicts an interior evolutionarily stable strategy where reproduction occurs in the middle of summer, as opposed to the beginning or end of summer \citep{Eskola2009}. For the environment-based cue, pikas have an ESS of 0.54cm, which corresponds to an average date of reproduction in mid-June. At the Yukon site, pikas, on average, reproduce on June 18th, but this varies between June 5th and July 2nd \citep{Franken2004b}. This strongly suggests pikas use a cue based on environmental conditions \citep{Franken2004b}. 
+
+In the Yukon, along with many other areas, climate change is expected to have two main effects on seasonal timing. First, and most commonly discussed, is the earlier timing of spring and the subsequent earlier timing of biological activity. Secondly, climate change is expected to increase the variability in timing of spring onset \citep{Assessment2005}. As we have demonstrated, these two predictions of climate change models may have conflicting selective pressures. The effects of climate change on pikas will depend on the exact quantitative relationship between the mean timing of spring onset and the variability in timing. Further, fitness benefits or costs will depend on how pikas are able to respond to these changing factors. 
+
+Our work demonstrates the existence of conflicting selective pressures for phenological timing under future climate change scenarios. There has been a lot of literature documenting earlier timing of reproduction driven by climate change \citep{Forrest2010}, but less work on the role of increased variability in climatic factors \citep{Smith2011}. Lastly, our work provides some insight into a species that may already be affected by climate change \citep{COSEWIC2011}. 
+
+
+
+
+
+
+
+
+
+
+
+```{r,eval=F,include=F,echo=F}
+# \section{The role of rare events in driving population dynamics}
+# 
+# \textbf{Easton R White}
+# 
+# The classic work of \citet{Lewontin1969} explained how Jensen's inequality can affect population dynamics. Although the arithematic mean of population growth may be greater than one (i.e. the population will increase), a population's geometric grwoth may be less than one leading to extinction. 
+# 
+# One important avenue of work would be to not only look at mean and variance of environmental stochasticity
+# 
+# , but also kurtosis. Kurtosis is the ``fat-tailedness" of a distribution. 
+# 
+# 
+# \subsection{Simple model}
+# 
+# 
+# \subsection{Results}
+# 
+# 
+#   - Background 
+#   - Methods and approach (simple model)
+#   - Potential outcomes 
+#   - Data analysis - how to estimate rare events. What types of distributions arise
+
+```
+
+
+
+
+
+\section{Designing marine reserves for resilience to extreme events}
+
+\textbf{Easton R White}
+
+\subsection{Introduction}
+
+In marine systems there are often several, seemingly conflicting management goals including fisheries, conservation, and economic development \citep{Botsford1997, Gaines2010}. To overcome conflicting management goals, ecosystem-based management (as opposed to managing resources in isolation) has been advocated as a more holistic approach. Recently, marine protected areas (MPAs) have emerged as one type of ecosystem-based management strategy \citep{Gaines2010}. Current international agreements (e.g. Sustainable Development Goals) aim for 10\% of coastal and marine areas to be set aside by the year 2020. Many countries have responded with developments of their own marine protected area plans. There is a rich set of theory on how to design marine protected areas and in particular networks of MPAs \citep{Botsford2001, Hastings2003a, Hastings2006, Gerber2003,Fulton2015}. Many factors contribute to the potential success of marine protected areas: MPA size, connectivity between MPAs, species life history (e.g. reproductive output, dispersal distance), fishing management outside reserves, and enforcement. Importantly, marine reserves are expected to not only change population dynamics, but also community level processes \citep{Baskett2015}. 
+
+There have been two general approaches to MPA planning: static optimization and dynamic (often bioeconomic) modeling \citep{Fulton2015}. Static models include information on habitat and species distributions coupled with economic factors (e.g. fisheries) to identify optimal locations and sizes of marine reserves \citep{Game2008}. These models can usually be implemented quickly and have less data requirements. At the other end of the spectrum are dynamic modeling approaches which focus more on population dynamics and connectivity between areas. Necessarily, these models require more detailed demographic information and reserve planning optimization routines require more time \citep{White2014a}. 
+
+Most MPA planning does not account for environmental variability (but see \citealp{Mangel2000, Halpern2006, Mcgilliard2011}). In theory, environmental variability should increase the amount of protected area needed to achieve conservation or management goals \citep{Allison2003}, although this strongly depends on the spatial structure of the population \citep{Mcgilliard2011}. The effects of environmental variability manifest in ways specific to individual species (e.g. reproductive output, survival). Further, these effects of environmental variability are usually differentially expressed spatially: local or global effects. In addition to environmental variability in general, even less work has examined the role of infrequent, or rare, events \cite{Smith2011}. Although rare, these types of events can be particularly devastating to marine ecosystems \citep{Mcgilliard2011, Fabina2015}. By there very nature, these types of events are difficult to study. For example, \citet{Game2008} used a static optimization approach to determine the effect of accounting for rare bleaching events in the Great Barrier Reef. Their approach included bleaching risk as a model constraint that tries to preserve different bioregions. However, a dynamic modeling approach is needed to truly evaluate the role of environmental stochasticity as static approaches can only do this in an ad hoc fashion.
+
+I have three primary aims in this chapter:
+
+\begin{enumerate}
+  \item Build a general model of marine reserve design that allows for environmental stochasticity, including rare events
+  \item Estimate and describe the distributions of rare events in a spatially-explicit context
+  \item Apply models to a coral reef system in the Caribbean \citep{Mumby2011}
+\end{enumerate}
+
+I will describe current methods of marine reserve design and how I plan to build on that work. I will then examine various approaches to studying rare events. Lastly, I describe a specific system where my approach is applicable. 
+
+\subsection{Methods}
+
+In the past two decades, many spatial planning tools have emerged \citep{Fulton2015}. MARXAN is among the most popular for its ease of use and low data requirements. Essentially, MARXAN uses optimization techniques (simulated annealing) to determine locations and sizes of marine reserves given some spatial data on species distributions. The program is able to include constraints like costs and conservation or fishery goals. One major drawback of MARXAN is the lack of specific ecological detail, like connectivity. Recently, \citet{White2014a} (not me unfortunately) included larval connectivity in these bioeconmoic models like MARXAN. They found that including connectivity was essential for meeting targets for some species, depending on their biology.
+
+Including this type of demography in models is important as environmental variability affects populations through resulting changes in their demographic parameters, or vital rates. In order to study the role of uncertainty in marine spatial planning, I propose extending the model of \citet{White2014a} to include stochastic dynamics so environmental variability can be readily included. 
+
+\subsubsection{Aim 1: Model of marine reserve design that accounts for rare events}
+
+I will use a discrete-time, spatially explicit population model which can allow for age structure \citep{White2014a}. Connectivity between spatial locations is given by a dispersal matrix $D_{ij}$, where the entry $i,j$ indicates movement of individuals from location $j$ to $i$. Therefore the total number of immigrants to population $i$ at time $t$ is $S_i(t, E(t)) = \sum_{j=1}^n D_{ij}(E(t)) N_j(t)$.
+
+  \begin{equation}
+    N_i (t+1) = g(N_i(t), E_i(t)) + s(N_i(t), E_i(t)) \cdot N_i(t) + S_i(t, E(t))
+  \end{equation}
+  
+  \begin{equation}
+      E_i (t+1) = f(E_i(t))
+  \end{equation}
+
+The population within one patch (or population within a metapopulation) is given by dispersal $(S_i)$, local population growth $(g(.))$, and survival of individuals $(s(.))$ from $t$ to $t+1$.
+
+Unlike past work \citep{White2014a}, this model is allowed to have stochastic variables. $E_i(t)$ describes the environment at time $t$. This could be a vector with variables for temperature, acidity, or other relevant parameters. Depending on the specific system, environmental stochasticity can arise in several ways to affect dispersal, survival, and reproductive output. 
+
+\subsubsection{Aim 2: Estimating freqeuency of rare events}
+
+Rare events, due to their rareness, are by their very nature difficult to study \citep{Mangel1994}. The frequency of rare events of course depends on the spatial and temporal scales evaluated. Like all environmental variability, there are various properties of rare events that are important, including: magnitude, duration, frequency, and predictability. There are generally three approaches to model rare events. 
+  
+\begin{enumerate}
+  \item With sufficient data, distributions of the frequency and magnitude of rare events can be constructed
+  \item In the absence of sufficient data, distributions (like a power law) can be assumed and their parameters can then be estimated
+  \item Mechanistic models where rare events would be an emergent property (e.g. global climate models and bleaching risk in corals)
+\end{enumerate}
+
+
+
+\subsubsection{Aim 3: Application to corals in the Caribbean}
+
+In marine settings, environmental stochasticity, and specifically rare events, can take many forms. Detailed mechanisms of how environmental stochasticity actually affects organisms should be known \citep{Baskett2012}.
+
+Recently, \citep{Mumby2011} described a static approach (using MARXAN) to create a marine reserve network in the Caribbean. They were specifically interested in designing a marine reserve network that would allow corals to be resilient to changes in climate, and therefore increased temperatures and risks of bleaching. They included a simple cost function in their MARXAN model to prioritize connectivity between coral reefs. However, they needed to make simplifying assumptions about the biology of coral reefs, community structure, and human influences. A dynamic modeling approach is required to account for this complexity and to determine robust marine reserve networks, not only in the context of climate change, but also risks from hurricanes and fishing activity. 
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+\vspace{-1cm}
+  \begin{center}
+	\includegraphics{mumby2011_map}
+	\caption{Connectivity between coral reefs in the Caribbean based on oceanographic models. Colors represent different types of coral reefs (in regards to their susceptibility to bleaching).}
+	\label{fig:mumby2011_map}
+  \end{center}
+\vspace{-1.5cm}
+\end{wrapfigure}
+
+I will use the spatially structured, stochastic approach described earlier to model coral reef dynamics. Importantly, oceanographic models provide data on connectivity between sites (Fig. \ref{fig:mumby2011_map}). In addition, data exists on bleaching risk for different sites and hurricane tracks in the area (Fig. \ref{fig:mumby2011_map}). I will use projections of bleaching risk and hurricane activity estimated until 2100. With a working model of the population dynamics of coral reefs in a stochastic environment, I can then explore different reserve network designs. Eventually, a ``optimal" configuration of marine reserves may be found. I will compare this configuration to situations where catastrophe risks are not taken into account and to the results from \citep{Mumby2011}.
+
+
+```{r include=F,eval=F,echo=F}
+# \citep{Game2008} examined the role of bleaching events in the context of marine reserve design. There was also that disturbance, resilience study done elsewhere in GBR 
+  
+# Kelp ecosystems are largely driven by severe storm events causing uprooting of plants compared to top-down or bottom-up factors \citep{Reed2016}. In addition, kelp is known to stress given warm temperatures. These events may both occur more frequently given future climate change. 
+```  
+
+
+\subsection{Potential results}
+
+Including environmental stochasticity, and in particular rare events, has the potential to alter the design of marine protected areas \citep{Allison2003, Game2008}. With increased stochasticity, a diversity of marine protected areas provides redundancy. This is especially true when environmental stochasticity is correlated in space. Static optimization routines cannot truly examine how environmental stochasticity affects marine systems as they lack biological mechanisms.
+
+It is also important to consider the role of multiple disturbances in marine reserve design \citep{Mellin2016}. Disturbances can act differently in terms of their effects on ecological systems via varying disturbance frequency, magnitudes, or their spatial extent. Bleaching, hurricanes, and fishing all present different challenges for coral reef resiliency and spatial planning.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Modeling seastar wasting disease}
+
+\subsection{Introduction}
+
+Throughout the world's oceans, there has been increasing concern regarding extreme temperatures and their effect on coral reefs, kelp, seagrasses, and other important ecosystems. Historically, these systems have evolved to handle certain amounts of environmental variability. However with climate change, extreme summer temperatures are expected to happen more frequently and for longer durations \citep{Smith2011}. It is unclear if corals will be able to adapt quickly enough to overcome the harmful effects of bleaching.
+
+Sea stars are keystone predators in the rocky intertidal \citep{Paine1966}. The losses of sea stars can lead to community-level effects. As keystone predators many sea star species create space in the intertidal which increases local diversity \citep{Paine1966}. In June 2013, began a massive die-off of sea stars (Class Asteroidea) on the west coast of North America. Sea star wasting disease, a catch-all term, causes lesions and eventual death for sea stars \citep{Hewson2014}. The disease has been identified in 20 species of sea stars from Baja California to Alaska. Biomass of sea stars in some areas declined up to 90\% because of the disease (Menge et al. 2016).
+
+The disease is still poorly described, but a densovirus (Parvoviridae) is now implicated as the cause \citep{Hewson2014}. The virus is found in the tissues of symptomatic sea stars, in the water column, and in sediment \citep{Hewson2014} Like other diseases, sea star wasting disease (via transmission and infection load) is also associated with warmer water temperatures \citep{Eisenlord2016}. In the Northeast Pacific, warmer waters occurred largely because of El Nino activity \citep{Eisenlord2016}; sustained heatwaves of potentially larger magnitude may be more common because of climate change.
+
+
+
+I plan to develop simple mathematical models parameterized with field and lab data to address four questions:
+  \begin{enumerate}
+    \item Can a simple mathematical model explain the interaction between temperature and disease in contributing to the current dieoff of sea stars?
+    \item Which areas will a high risk of disease in the future?
+    \item What management actions (e.g. culling) could be taken once an outbreak was identified?
+    \item How would you design marine reserves to promote conservation of sea stars in the absence versus presence of the disease? 
+  \end{enumerate}
+  
+
+\subsection{Methods}
+  
+  \subsubsection{Simple models}
+
+\citet{Sokolow2009} examined a general metapopulation model of infectious marine diseases. Their model was spatially implicit and differed from most disease models as it included a free-living pathogen. They applied their model to a recent white plague outbreak among coral in the Florida Keys. I will modify their modeling framework to be suitable for sea star wasting disease (Fig. \ref{fig:seastar_diagram}). 
+
+Based on the biology of the Densovirus associated and sea star life cycles, here is a simple schematic of local populations dynamics (Fig. \ref{fig:seastar_diagram}). The boxes in this figures would be connected to other boxes of local populations dynamics.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{SI_seastar_diagram}
+	\caption{Simple SI model with a free-living virus stage, susceptible sea stars, and infected sea stars of different virus loads denoted by a subscript. Temperature affects several of the processes. The diagram represents a single population that could be connected to other populations via dispersal.}
+	\label{fig:seastar_diagram}
+\end{figure}
+
+The model includes a free living virus ($W$), susceptible sea star stage ($S$), and several infected individuals stages ($I_j$), depending on viral load. Viral load and species differeneces (or host heterogeneity more generally) may change predictions of these models \citep{Lloyd-Smith2005}. In addition, environmental factors, specifically temperature, are known to affect various processes \citep{Eisenlord2016}.
+
+
+  \subsubsection{Data}
+  
+There is data available from laboratory experiments and field observations. \citet{Eisenlord2016} examined the role of temperature and size on the probability of disease in several species of sea star. In addition, they documented time to death once a sea star became symptomatic.
+
+Along the west coast, the University of California, Santa Cruz (in collaboration with partners) has maintained longterm census records on intertidal organisms for the past several decades. In addition, many locations have collected prevalence of seastar wasting disease.
+
+\subsection{Possible results}
+
+A simple disease model with environmental variability should be able to describe the disease dynamics well. If not, then the disease may be more complicated then what the model currently captures. 
+
+If temperature, sea star density, or both play a large role in outbreak dynamics then it may be possible to predict which populations are the most likely to be susceptible in the future. For example, tracking temperatures profiles may allow managers to predict outbreaks on a near-realtime basis \citep{Lafferty2016}. Managers could decide if culling or another strategy may be appropriate. In addition it is important to understand if marine reserves will have benefits or costs in regards to the spread of diseases. Reserves can be a safe haven for diseased sea stars, but could also be important in repopulating areas affected by the disease.
+
+
+
+
+\section{PhD Timeline}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lllll}
+  \hline
+Names & Spring 2016 & Summer 2016 & Fall 2016 & Winter 2017 \\ 
+  \hline
+Chapter 1 & Lit Review and writing &  & Finish writing &  \\ 
+  Chapter 2 & Lit review and writing & At IIASA & Finish writing &  \\ 
+  Chapter 3 &  &  & Lit review & Collect data \\ 
+  Chapter 4 &  &  & Lit review & Disease course \\ 
+   &  &  &  &  \\ 
+   \hline
+   & Spring 2017 & Summer 2017 & 2017-2018 & Summer 2018 \\ 
+   \hline
+  Chapter 1 &  &  &  & Defend  \\ 
+  Chapter 2 &  &  &  & Defend  \\ 
+  Chapter 3 & Modeling & Modeling & Analysis and writing & Defend \\ 
+  Chapter 4 &  & Data and Modeling & Analysis and writing & Defend \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+```{r kable,echo=F,include=F,eval=F}
+# #
+ mytimeline = read.csv('timeline.csv',header=T,sep=',')
+ library(knitr)
+ require(xtable)
+ kable(mytimeline,digits=2)
+```
+
+
+\section{Broader significance and future directions}
+
+Environmental variability is a ubiquitous feature of ecological systems. With climate change, and other anthropogenic drivers, environmental variability is expected to increase in many systems. My dissertation touches on how this type of environmental variability will affect seasonal dynamics, evolutionary dynamics, management of natural resources, and disease dynamics. My disseration has a particular emphasis on the underappreciated effects of rare events in ecological systems \citep{Smith2011}.
+
+In the future, I would like to study other types of environmental variability in marine systems and how this may affect management decisions \citep{Halpern2006}. I think the most difficult empirical challenge moving forward is to obtain detailed enough information to model spatial processes, but to also be able to describe dynamics over large spatial scales. 
+
+The approaches I have desribed make a number of simplifying assumptions. In the future, it would be useful to study multi-species communities in marine reserve design \citep{Baskett2007}, other types of environmental stochasticity, and more detailed models of disease transmission.
+
+\end{spacing}
+
+\section{References}
+
+
+```{r,echo=F,include=F}
+# \section{Theoretical predictions of fisheries models}
+# 
+# \subsection{Outline}
+# \begin{itemize}
+#   \item Discussion of theoretical predictions MPA models
+#   \item Rarely tested empirically
+#   \item Meta-analysis of a specific question
+# \end{itemize}
+# 
+# \section{Project timeline} 
+```
+
+
+
+```{r,echo=F,eval=F,include=F}
+\begin{table}[!h]
+	\small \centering
+	\begin{tabular}{l p{4.5cm} p{2.2cm} l l}
+		\hline
+		Notation & Parameter & Units & Estimate & Reference \\ 
+		\hline
+		 $e$ & decay parameter for snow depth & 1/time & -0.04 & Environment Canada\\ 
+		 $E[0]$ & average snow depth on March 15th & cm & 18.00 & Environment Canada \\ 
+		 $\sigma_E$ & standard deviation of snow depth on March 15th & none & 12.00 & Environment Canada \\ 
+		$u_A$ & adult mortality rate & 1/time & -0.001 & \citet{Smith1978}, Supp. Mat. \\ 
+		$u_J$ & summer mortality rate of juveniles with no snow present & 1/time & -0.01 & Supp. Mat. \\ 
+		$u_E$ & maximum summer mortality rate of juveniles with snow present & 1/time & -0.50 & Supp. Mat. \\ 
+		$K$ & half-saturation constant for $E[t]/(K + E[t])$ & cm & 15.00 & Supp. Mat. \\ 
+		$w_J$ & conversion of resources into resource reserve & reserve/(grams consumed) & 0.33 & \citet{Smith1984a} \\ 
+		$ \beta_J $ & decay of body condition & 1/time & -0.001 & \citet{Dearing1997} \\ 
+		$w_A$ & conversion of resources into resource reserve & reserve/(grams consumed) & 0.33 & \citet{Smith1984a} \\ 
+		$ \beta_A $ & decay of body condition (change in haypile size without renewal) & 1/time & -0.001 & \citet{Dearing1997} \\ 
+		$r$ & intrinsic rate of growth & 1/time & 0.044 & \citet{McIntire2005} \\ 
+		$K_R$ & carrying capacity per meter squared & grams & 150.00 & \citet{McIntire2005} \\ 
+		$a_A$ & per capita adult attack rate & area/time & 1.50 & Supp. Mat. \\ 
+		%15 & $h_A$ & adult handling time & time/gram & 0.01 & \citet{Huntly1987} \\ 
+		$a_J$ & per capita juvenile attack rate & area/time & 1.50 & Supp. Mat. \\ 
+		%17 & $h_J$ & juvenile handling time & time/gram & 0.01 & \citet{Huntly1987} \\ 
+		$\sigma_A$ & max adult over winter survival & none & 0.90 & \citet{COSEWIC2011} \\ 
+		$K_A$ & half saturation constant for adult over winter survival & reserve & 2500.00 & \citet{Morrison2009} \\ 
+		$\sigma_J$ & max juvenile over winter survival and maturation probability & none & 0.90 & \citet{COSEWIC2011} \\ 
+		$K_J$ & half saturation constant for juvenile over winter survival and maturation probability & reserve & 2500.00 & \citet{Morrison2009} \\ 
+		$s(t)$ & number of offspring per year & \# female offspring/female & 1.50 & \citet{SmithWeston1990} \\ 
+		\hline
+	\end{tabular}
+	\caption{Default model parameters derived from literature or calculated in the supplementary material for the Collared pika (\emph{Ochotona collaris}) population at Ruby Ridge, Yukon, Canada.}
+\end{table}
+```

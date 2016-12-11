@@ -1,0 +1,12 @@
+.DS_Store
+.Rhistory
+*.docx
+*.tex
+*.bbl
+Readings/
+old_drafts/
+QE_logistics_and_examples/
+Paperwork/
+bookchapters_botsford/
+*.pptx
+
