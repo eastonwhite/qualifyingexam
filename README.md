@@ -8,4 +8,4 @@ Here I have included notes and thoughts for my PhD qualifying exam which ~~is sc
   - Environmental stochasticity: Louie Yang
   - Conservation biology: Ted Grosholz
 
-This repository was originally inspired by Noam Ross who also put his qualifying exam notes on Github.
+This repository was originally inspired by Noam Ross who also put his qualifying exam notes on Github. The repository consists of my qualifying exam proposal along with markdown files with notes on my QE topics.
